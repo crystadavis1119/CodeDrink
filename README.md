@@ -8,13 +8,13 @@ Opening screen will prompt users to create a profile and login by answering a fe
 We will use each of the users answered profile questions in functions to determine who will drink each round. It is then up to the users/players to figure out the algorithm and who will be drinking that round.
 
 ### Contributors
-* Hayden Bradshaw
+* Hayden Bradshaw |
     http://github.com/haybradshaw
-* Crysta Davis 
+* Crysta Davis |
     http://github.com/crystadavis1119
-* Jason Trovela
+* Jason Trovela |
     [portfolio]
-* Eduardo Lopez
+* Eduardo Lopez |
     http://linkedin.com/in/eduardolopez13
 
 ### Technology Used
