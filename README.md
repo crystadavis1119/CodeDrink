@@ -1,5 +1,5 @@
 # Code Drink
-hi :)
+hi :) me first
 hello :(
 ### Concept
 Being bootcamp students (both Software Engineering and UX/UI), we find ourselves unwinding after a long day of coding and designing by grabbing a beer with our fellow students. While brainstorming ideas for this project, we thought about how much we love playing games and asked ourselves, "Why not build something we're passionate about, while also having fun?" Lo and behold, Code Drink! A way to learn some basic python functions and have fun with your peers.
