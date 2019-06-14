@@ -9,20 +9,20 @@ We will use each of the users answered profile questions in functions to determi
 
 ### Contributors
 * Hayden Bradshaw
-    [Github] (http://github.com/haybradshaw)
+    ![Github] (http://github.com/haybradshaw)
 * Crysta Davis 
-    [Github] (http://github.com/crystadavis1119)
+    ![Github] (http://github.com/crystadavis1119)
 * Jason Trovela
     [portfolio]
 * Eduardo Lopez
-    [LinkedIn] (http://linkedin.com/in/eduardolopez13)
+    ![LinkedIn] (http://linkedin.com/in/eduardolopez13)
 
 ### Technology Used
 * HTML
 * CSS
 * Materialize 
 * Python
-* Sequel
+* PostgresQL
 * Github
 * Trello
 * Sketch
