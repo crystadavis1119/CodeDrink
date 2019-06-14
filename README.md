@@ -30,17 +30,17 @@ We will use each of the users answered profile questions in functions to determi
 
 ### Stretch Goals
 * Ranking system/ Point tracker
-* Live updating
-* Multiple Levels of difficulty 
 * Sound feedback
+* animation
 
 ### Screenshots
-
+[TBD]
 
 
 ### Biggest Challenges
-
-
+* first time working in a team
+* ensure clear communication
+* ensure everyone's ideas are heard
 
 ### Key Learnings & Take Aways
 * don't be afraid to ask for help
@@ -49,5 +49,6 @@ We will use each of the users answered profile questions in functions to determi
 * working in a group means that everyone is participating, being heard, and we all have realistic expectations of everyone's capabilities and ambitions
 
 ### Project Continuation
-* 
+* differing levels of difficulty 
+* socket-functionality (live updating)
 
