@@ -9,13 +9,13 @@ We will use each of the users answered profile questions in functions to determi
 
 ### Contributors
 * Hayden Bradshaw
-    ![Github] (http://github.com/haybradshaw)
+    http://github.com/haybradshaw
 * Crysta Davis 
-    ![Github] (http://github.com/crystadavis1119)
+    http://github.com/crystadavis1119
 * Jason Trovela
     [portfolio]
 * Eduardo Lopez
-    ![LinkedIn] (http://linkedin.com/in/eduardolopez13)
+    http://linkedin.com/in/eduardolopez13
 
 ### Technology Used
 * HTML
