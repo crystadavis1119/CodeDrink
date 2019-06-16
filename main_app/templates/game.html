@@ -3,6 +3,12 @@
 
 <h1>Game Page</h1>
 <hr />
-{% csrf_token %}
+
+{% for player in players %}
+    {% if player.age > 41 %}
+        <p> {{ player.name }} </p>
+    {% endif %}
+{% endfor %}
+
 
 {% endblock %}
