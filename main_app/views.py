@@ -29,6 +29,7 @@ def signup(request):
 class PlayerCreate(LoginRequiredMixin, CreateView):
   model = Player
   fields = ['name', 'breed', 'description', 'age']
+  success_url = '/players/'
 
   def form_valid(self, form):
     form.instance.user = self.request.user
