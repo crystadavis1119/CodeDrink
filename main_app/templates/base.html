@@ -19,8 +19,11 @@
                 </ul>
                 <ul class="right">
                     <li><a href="{% url 'game' %}">Game</a></li>
-                    <li><a href="{% url 'players_create' %}">Add a Player</a></li>
-                    <li><a href="{% url 'index' %}">View All Players</a></li>
+                    {% if user.is_authenticated %}
+                        <li><a href="{% url 'players_create' %}">Create Player Profile</a></li>
+                        <li><a href="{% url 'index' %}">View All Players</a></li>
+                        <li><a href="{% url 'logout' %}">Log Out</a></li>
+                    {% endif %}
                 </ul>
             </div>
         </nav>

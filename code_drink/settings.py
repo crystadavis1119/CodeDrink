@@ -121,3 +121,6 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 LOGIN_REDIRECT_URL = '/players/'
+SIGNUP_REDIRECT_URL = '/players/create/'
+
+LOGOUT_REDIRECT_URL = '/'
