@@ -13,12 +13,12 @@
 
 
 
-
 {% for player in players %}
     {% if player.age > 41 %}
         <p> {{ player.name }} </p>
     {% endif %}
 {% endfor %}
+
 
 
 <a href="{% url 'game' %}" type="submit" class="btn">To Game Page</a>
