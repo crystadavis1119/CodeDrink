@@ -18,7 +18,6 @@
                     <li><a href="/" class="left brand-logo">&nbsp;&nbsp;Drink & Think</a></li>
                 </ul>
                 <ul class="right">
-                    {% comment %} <li><a href="{% url 'game' %}">Game</a></li> {% endcomment %}
                     {% if user.is_authenticated %}
                         <li><a href="{% url 'index' %}">View All Players</a></li>
                         <li><a href="{% url 'logout' %}">Log Out</a></li>

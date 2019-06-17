@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h1>Results</h1>
+<hr />
+    <div class="card">
+        <div class="card-content">
+            <span class="card-title">Loop</span>
+            <p>for player in players</p>
+            <p>if player.age > 41</p>
+        </div>
+    </div>
+
+
+{% comment %} below code to be put in results page {% endcomment %}
+{% for player in players %}
+    {% if player.age > 41 %}
+        <p> {{ player.name }} </p>
+    {% endif %}
+{% endfor %}
+
+<a href="{% url 'game' %}" type="submit" class="btn">To Game Page</a>
+
+
+
+
+
+{% endblock %}

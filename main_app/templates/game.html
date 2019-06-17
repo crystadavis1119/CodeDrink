@@ -4,11 +4,15 @@
 <h1>Game Page</h1>
 <hr />
 
-{% for player in players %}
-    {% if player.age > 41 %}
-        <p> {{ player.name }} </p>
-    {% endif %}
-{% endfor %}
+    <div class="card">
+        <a href='/results/'>
+            <div class="card-content">
+                <span class="card-title">Loop</span>
+                <p>for player in players</p>
+                <p>if player.age > 41</p>
+            </div>
+        </a>
+    </div>
 
 
 {% endblock %}

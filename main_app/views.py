@@ -59,3 +59,7 @@ def players_index(request):
 def players_detail(request, player_id):
   player = Player.objects.get(id=player_id)
   return render(request, 'players/detail.html', { 'player': player })
+
+def results(request):
+  players = Player.objects.all()
+  return render(request, 'results.html', { 'players' : players })
