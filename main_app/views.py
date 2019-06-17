@@ -1,25 +1,31 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from django.views.generic.edit import CreateView, UpdateView, DeleteView
+from .models import Player
 
-class Player:
-    def __init__(self, name, breed, description, age):
-        self.name = name
-        self.breed = breed
-        self.description = description
-        self.age = age
+class PlayerCreate(CreateView):
+  model = Player
+  fields = '__all__'
 
-players = [
-    Player('Lolo', 'tabby', 'foul little demon', 3),
-    Player('Sachi', 'tortoise shell', 'diluted tortoise shell', 0),
-    Player('Raven', 'black tripod', '3 legged cat', 4)
-]
+class PlayerUpdate(UpdateView):
+  model = Player
+  # Let's make it impossible to rename a cat :)
+  fields = ['breed', 'description', 'age']
 
+class PlayerDelete(DeleteView):
+  model = Player
+  success_url = '/players/'
 
 def home(request):
-  return HttpResponse('<h1>Code Drink Homepage</h1>')
+  return render(request, 'home.html')
 
 def game(request):
-  return render(request, 'game.html')
+  players = Player.objects.all()
+  return render(request, 'game.html', { 'players' : players })
 
 def players_index(request):
-    return render(request, 'players/index.html', { 'players' : players })
+  players = Player.objects.all()
+  return render(request, 'players/index.html', { 'players' : players })
+
+def players_detail(request, player_id):
+  player = Player.objects.get(id=player_id)
+  return render(request, 'players/detail.html', { 'player': player })

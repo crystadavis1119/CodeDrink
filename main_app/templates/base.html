@@ -15,8 +15,12 @@
         <nav>
             <div class="nav-wrapper">
                 <ul>
-                    <li><a href="/" class="left brand-logo">&nbsp;&nbsp;CodeDrink</a></li>
-                    <li><a href="/players" class="right brand-logo">Players</a></li>
+                    <li><a href="/" class="left brand-logo">&nbsp;&nbsp;Drink & Think</a></li>
+                </ul>
+                <ul class="right">
+                    <li><a href="{% url 'game' %}">Game</a></li>
+                    <li><a href="{% url 'players_create' %}">Add a Player</a></li>
+                    <li><a href="{% url 'index' %}">View All Players</a></li>
                 </ul>
             </div>
         </nav>
@@ -26,7 +30,7 @@
         {% endblock %}
     </main>
        <footer class="page-footer">
-       <div class="right">All Rights Reserved, &copy; 2019 Code Drink &nbsp;</div>
+       <div class="right">All Rights Reserved, &copy; 2019 Drink & Think &nbsp;</div>
     </footer>
 </body>
 </html>
