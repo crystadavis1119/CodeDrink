@@ -4,15 +4,35 @@
 <h1>Game Page</h1>
 <hr />
 
-    <div class="card">
-        <a href='/results/'>
-            <div class="card-content">
-                <span class="card-title">Loop</span>
-                <p>for player in players</p>
-                <p>if player.age > 41</p>
-            </div>
-        </a>
-    </div>
+<script type="text/javascript">
+<!--
+    function toggle_visibility(id) {
+       var e = document.getElementById(id);
+       if(e.style.display == 'block')
+          e.style.display = 'none';
+       else
+          e.style.display = 'block';
+    }
+//-->
+</script>
+
+<div class="card">
+    <a href="#" onclick="toggle_visibility('answer-1');">
+        <div class="card-content">
+            <span class="card-title">Loop</span>
+            <p>for player in players</p>
+            <p>if player.age > 41</p>
+        </div>
+    </a>
+</div>
+
+<div id="answer-1">
+    {% for player in players %}
+        {% if player.age > 41 %}
+            <p> {{ player.name }} </p>
+        {% endif %}
+    {% endfor %}
+</div>
 
 
 {% endblock %}
