@@ -28,7 +28,7 @@ def signup(request):
 
 class PlayerCreate(LoginRequiredMixin, CreateView):
   model = Player
-  fields = ['name', 'age', 'color', 'description', ]
+  fields = ['name', 'age', 'color', 'description']
   success_url = '/players/'
 
   def form_valid(self, form):
@@ -38,7 +38,11 @@ class PlayerCreate(LoginRequiredMixin, CreateView):
 
 class PlayerUpdate(LoginRequiredMixin, UpdateView):
   model = Player
-  fields = ['age', 'color', 'description', ]
+  fields = ['age', 'color', 'description']
+
+  def form_valid(self, form):
+    form.instance.user = self.request.user
+    return super().form_valid(form)
 
 
 class PlayerDelete(LoginRequiredMixin, DeleteView):

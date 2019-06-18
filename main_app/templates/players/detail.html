@@ -2,6 +2,7 @@
 {% block content %}
 
 <h1>Player Details</h1>
+<hr />
 
 <div class="card">
   <div class="card-content">
@@ -9,7 +10,6 @@
     <p>Age: {{ player.age }}</p>
     <p>Favorite Color: {{ player.color }}</p>
     <p>Description: {{ player.description }}</p>
-
   </div>
   <div class="card-action">
     <a href="{% url 'players_update' player.id %}">Edit</a>
