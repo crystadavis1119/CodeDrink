@@ -16,3 +16,13 @@ footer {
 .second-line {
     text-indent: 2em;
 }
+
+.nav-wrapper {
+    background-color: #4b9e75 !important;
+    font-family: 'Special Elite', cursive;
+}
+
+.page-footer{
+    background-color: #4b9e75 !important;
+    font-family: 'Special Elite', cursive;
+}
