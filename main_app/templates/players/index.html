@@ -9,13 +9,9 @@
         <a href='/players/{{ player.id }}'>
             <div class="card-content">
                 <span class="card-title">{{ player.name }}</span>
-                <p>Breed: {{ player.breed }}</p>
+                <p>Age: {{ player.age }}</p>
+                <p>Favorite Color: {{ player.color }}</p>
                 <p>Description: {{ player.description }}</p>
-                {% if player.age > 0 %}
-                    <p>Age: {{ player.age }}</p>
-                {% else %}
-                    <p>Age: Kitten</p>
-                {% endif %}
             </div>
         </a>
     </div>

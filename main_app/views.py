@@ -28,7 +28,7 @@ def signup(request):
 
 class PlayerCreate(LoginRequiredMixin, CreateView):
   model = Player
-  fields = ['name', 'breed', 'description', 'age']
+  fields = ['name', 'age', 'color', 'description', ]
   success_url = '/players/'
 
   def form_valid(self, form):
@@ -38,7 +38,7 @@ class PlayerCreate(LoginRequiredMixin, CreateView):
 
 class PlayerUpdate(LoginRequiredMixin, UpdateView):
   model = Player
-  fields = ['breed', 'description', 'age']
+  fields = ['age', 'color', 'description', ]
 
 
 class PlayerDelete(LoginRequiredMixin, DeleteView):

@@ -36,7 +36,7 @@
         <div class="card-content">
             <span class="card-title">Loop</span>
             <p>for player in players</p>
-            <p>if player.age > 41</p>
+            <p class="second-line">if player.age > 41</p>
         </div>
     </a>
 </div>
@@ -55,7 +55,7 @@
         <div class="card-content">
             <span class="card-title">Loop</span>
             <p>for player in players</p>
-            <p>if player.age > 60</p>
+            <p class="second-line">if player.age > 60</p>
         </div>
     </a>
 </div>
@@ -72,15 +72,15 @@
 <div class="card" id="card3" style="display: block">
     <a href="#" onclick="toggle_visibility('a3'); hide('card1'); hide('card2'); hide('card4');">
         <div class="card-content">
-            <span class="card-title">Breed loop</span>
+            <span class="card-title">Favorite Color loop</span>
             <p>for player in players</p>
-            <p>if player.breed >= 'taby'</p>
+            <p class="second-line">if player.color == 'blue'</p>
         </div>
     </a>
 </div>
 <div id="a3" style="display: none">
     {% for player in players %}
-        {% if player.breed >= 'taby' %}
+        {% if player.color == 'blue' %}
             <p> {{ player.name }} </p>
         {% endif %}
     {% endfor %}
@@ -93,7 +93,7 @@
         <div class="card-content">
             <span class="card-title">Loop</span>
             <p>for player in players</p>
-            <p>if player.age > 60</p>
+            <p class="second-line">if player.age > 60</p>
         </div>
     </a>
 </div>

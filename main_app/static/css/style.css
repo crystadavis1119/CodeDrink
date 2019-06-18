@@ -13,12 +13,6 @@ footer {
     text-align: right;
 }
 
-.first-line {
-    padding-left: 1.5em;
-    text-indent:-1.5em;
-}
-
 .second-line {
-    padding-left: 1.5em;
-    text-indent:-1.5em;
+    text-indent: 2em;
 }
