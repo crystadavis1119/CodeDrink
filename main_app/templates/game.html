@@ -2,10 +2,15 @@
 {% block content %}
 
 <h1>Game Page</h1>
+{% comment %} TBD optional game page reset {% endcomment %}
+<a href="{% url 'game' %}" type="submit" class="btn">Play Again</a>
+<a href="{% url 'results' %}" type="submit" class="btn">End Game</a>
+
 <hr />
 
+{% comment %} JS Script to allow toogle hide answers {% endcomment %}
+
 <script type="text/javascript">
-<!--
     function toggle_visibility(id) {
        var e = document.getElementById(id);
        if(e.style.display == 'block')
@@ -13,11 +18,12 @@
        else
           e.style.display = 'block';
     }
-//-->
 </script>
 
+{% comment %} Question1 and answer {% endcomment %}
+
 <div class="card">
-    <a href="#" onclick="toggle_visibility('answer-1');">
+    <a href="#" onclick="toggle_visibility('a1');">
         <div class="card-content">
             <span class="card-title">Loop</span>
             <p>for player in players</p>
@@ -25,14 +31,71 @@
         </div>
     </a>
 </div>
-
-<div id="answer-1">
+<div id="a1" style="display: none">
     {% for player in players %}
         {% if player.age > 41 %}
             <p> {{ player.name }} </p>
         {% endif %}
     {% endfor %}
+    {% comment %} TBD optional reset button in output {% endcomment %}
+    <a href="{% url 'game' %}" type="submit" class="btn">Play Again</a>
 </div>
 
+{% comment %} Question2 and answer {% endcomment %}
+
+<div class="card">
+    <a href="#" onclick="toggle_visibility('a2');">
+        <div class="card-content">
+            <span class="card-title">Loop</span>
+            <p>for player in players</p>
+            <p>if player.age > 60</p>
+        </div>
+    </a>
+</div>
+<div id="a2" style="display: none">
+    {% for player in players %}
+        {% if player.age > 60 %}
+            <p> {{ player.name }} </p>
+        {% endif %}
+    {% endfor %}
+</div>
+
+{% comment %} Question3 and answer {% endcomment %}
+
+<div class="card">
+    <a href="#" onclick="toggle_visibility('a3');">
+        <div class="card-content">
+            <span class="card-title">Breed loop</span>
+            <p>for player in players</p>
+            <p>if player.breed >= 'taby'</p>
+        </div>
+    </a>
+</div>
+<div id="a3" style="display: none">
+    {% for player in players %}
+        {% if player.breed >= 'taby' %}
+            <p> {{ player.name }} </p>
+        {% endif %}
+    {% endfor %}
+</div>
+
+{% comment %} Question4 and answer {% endcomment %}
+
+<div class="card">
+    <a href="#" onclick="toggle_visibility('a4');">
+        <div class="card-content">
+            <span class="card-title">Loop</span>
+            <p>for player in players</p>
+            <p>if player.age > 60</p>
+        </div>
+    </a>
+</div>
+<div id="a4" style="display: none">
+    {% for player in players %}
+        {% if player.age > 60 %}
+            <p> {{ player.name }} </p>
+        {% endif %}
+    {% endfor %}
+</div>
 
 {% endblock %}
