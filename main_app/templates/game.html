@@ -17,9 +17,18 @@
           e.style.display = 'none';
        else
           e.style.display = 'block';
-    }
+    };
+
+    function hide(id) {
+       var e = document.getElementById(id);
+       if(e.style.display == 'block')
+          e.style.display = 'none';
+       else
+          e.style.display = 'block';
+    };
 </script>
 
+<<<<<<< HEAD
 <script type="text/javascript">
     function toggle_visibility(class) {
        var e = document.getElementByClass(class);
@@ -35,6 +44,13 @@
 <div class="card" style="display: none">
      <a href="#" onclick="toggle_visibility('a1');">
      <a href="." onclick="toggle_visibility('card');">
+=======
+
+{% comment %} Question1 and answer {% endcomment %}
+
+<div class="card" id="card1" style="display: block">
+    <a href="#" onclick="toggle_visibility('a1'); hide('card2'); hide('card3'); hide('card4');">
+>>>>>>> 929910b8b0ca94b94a054b3b78ac65a4e6d3bcd6
         <div class="card-content">
             <span class="card-title">Loop</span>
             <p>for player in players</p>
@@ -54,8 +70,13 @@
 
 {% comment %} Question2 and answer {% endcomment %}
 
+<<<<<<< HEAD
 <div class="card" >
     <a href="#" onclick="toggle_visibility('a2');">
+=======
+<div class="card" id="card2" style="display: block">
+    <a href="#" onclick="toggle_visibility('a2'); hide('card1'); hide('card3'); hide('card4');">
+>>>>>>> 929910b8b0ca94b94a054b3b78ac65a4e6d3bcd6
         <div class="card-content">
             <span class="card-title">Loop</span>
             <p>for player in players</p>
@@ -73,8 +94,8 @@
 
 {% comment %} Question3 and answer {% endcomment %}
 
-<div class="card">
-    <a href="#" onclick="toggle_visibility('a3');">
+<div class="card" id="card3" style="display: block">
+    <a href="#" onclick="toggle_visibility('a3'); hide('card1'); hide('card2'); hide('card4');">
         <div class="card-content">
             <span class="card-title">Breed loop</span>
             <p>for player in players</p>
@@ -92,8 +113,8 @@
 
 {% comment %} Question4 and answer {% endcomment %}
 
-<div class="card">
-    <a href="#" onclick="toggle_visibility('a4');">
+<div class="card" id="card4" style="display: block">
+    <a href="#" onclick="toggle_visibility('a4'); hide('card1'); hide('card2'); hide('card3');">
         <div class="card-content">
             <span class="card-title">Loop</span>
             <p>for player in players</p>
