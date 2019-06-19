@@ -18,11 +18,26 @@ footer {
 }
 
 .nav-wrapper {
-    background-color: #4b9e75 !important;
+    background-color: #173f5f !important;
     font-family: 'Special Elite', cursive;
 }
 
 .page-footer{
-    background-color: #4b9e75 !important;
+    background-color: #173f5f !important;
     font-family: 'Special Elite', cursive;
+}
+a {
+    color:#20639b;
+}
+
+span {
+    color: #ed553b
+}
+
+p {
+    color: #3caea3
+}
+
+h1 {
+    color: #f4a261
 }

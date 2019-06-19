@@ -1,11 +1,10 @@
 {% extends 'base.html' %}
 {% block content %}
 
-<h1>Game Page</h1>
-<hr />
-{% comment %} TBD optional game page reset {% endcomment %}
-<a href="{% url 'game' %}" type="submit" class="btn">Play Again</a>
-<a href="{% url 'results' %}" type="submit" class="btn">End Game</a>
+<h1 class="animated hinge delay-2s slow">Let's Get Drunk!</h1>
+
+{% comment %} <a href="{% url 'game' %}" type="submit" class="btn">Play Again</a>
+<a href="{% url 'results' %}" type="submit" class="btn">End Game</a> {% endcomment %}
 
 
 
@@ -43,7 +42,7 @@
 <div id="a1" style="display: none">
     {% for player in players %}
         {% if player.age > 41 %}
-            <p> {{ player.name }} </p>
+            <p class="animated lightSpeedIn slow" > {{ player.name }} </p>
         {% endif %}
     {% endfor %}
 </div>
@@ -62,7 +61,7 @@
 <div id="a2" style="display: none">
     {% for player in players %}
         {% if player.age > 60 %}
-            <p> {{ player.name }} </p>
+            <p class="animated lightSpeedIn slow"> {{ player.name }} </p>
         {% endif %}
     {% endfor %}
 </div>
@@ -81,7 +80,7 @@
 <div id="a3" style="display: none">
     {% for player in players %}
         {% if player.color == 'blue' %}
-            <p> {{ player.name }} </p>
+            <p class="animated lightSpeedIn slow"> {{ player.name }} </p>
         {% endif %}
     {% endfor %}
 </div>
@@ -100,7 +99,7 @@
 <div id="a4" style="display: none">
     {% for player in players %}
         {% if player.age > 60 %}
-            <p> {{ player.name }} </p>
+            <p class="animated lightSpeedIn slow"> {{ player.name }} </p>
         {% endif %}
     {% endfor %}
 </div>
