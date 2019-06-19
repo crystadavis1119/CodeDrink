@@ -33,7 +33,7 @@
 <div class="card" id="card1" style="display: block">
     <a href="#" onclick="toggle_visibility('a1'); hide('card2'); hide('card3'); hide('card4');">
         <div class="card-content">
-            <span class="card-title">Loop</span>
+            <span class="card-title" id="card-font">Loop</span>
             <p>for player in players</p>
             <p class="second-line">if player.age > 41</p>
         </div>
@@ -42,7 +42,7 @@
 <div id="a1" style="display: none">
     {% for player in players %}
         {% if player.age > 41 %}
-            <p class="animated lightSpeedIn slow" > {{ player.name }} </p>
+            <p class="animated lightSpeedIn slow" id="player-names"> {{ player.name }} </p>
         {% endif %}
     {% endfor %}
 </div>
@@ -52,7 +52,7 @@
 <div class="card" id="card2" style="display: block">
     <a href="#" onclick="toggle_visibility('a2'); hide('card1'); hide('card3'); hide('card4');">
         <div class="card-content">
-            <span class="card-title">Loop</span>
+            <span class="card-title" id="card-font">Loop</span>
             <p>for player in players</p>
             <p class="second-line">if player.age > 60</p>
         </div>
@@ -71,7 +71,7 @@
 <div class="card" id="card3" style="display: block">
     <a href="#" onclick="toggle_visibility('a3'); hide('card1'); hide('card2'); hide('card4');">
         <div class="card-content">
-            <span class="card-title">Favorite Color loop</span>
+            <span class="card-title" id="card-font">Favorite Color loop</span>
             <p>for player in players</p>
             <p class="second-line">if player.color == 'blue'</p>
         </div>
@@ -90,7 +90,7 @@
 <div class="card" id="card4" style="display: block">
     <a href="#" onclick="toggle_visibility('a4'); hide('card1'); hide('card2'); hide('card3');">
         <div class="card-content">
-            <span class="card-title">Loop</span>
+            <span class="card-title" id="card-font">Loop</span>
             <p>for player in players</p>
             <p class="second-line">if player.age > 60</p>
         </div>
