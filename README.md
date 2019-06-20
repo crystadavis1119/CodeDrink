@@ -35,7 +35,7 @@ We will use each of the users answered profile questions in functions to determi
 * animation
 
 ### Screenshots
-![](/images/homepage.png)
+![](homepage.png)
 
 
 ### Biggest Challenges
