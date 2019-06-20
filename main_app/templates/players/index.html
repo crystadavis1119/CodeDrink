@@ -3,7 +3,11 @@
 
 <h1>Player List</h1>
 <hr />
-<a href="{% url 'game' %}" class="btn">Start Game</a>
+
+{% if request.user.is_superuser  %}
+    <a href="{% url 'game' %}" class="btn">Start Game</a>
+{% endif %}
+
 
 {% for player in players %}
     <div class="card">

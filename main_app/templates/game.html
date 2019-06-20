@@ -3,6 +3,7 @@
 
 <h1 class="animated hinge delay-2s slow">Let's Get Drunk!</h1>
 
+
 <script type="text/javascript">
     function toggle_visibility(id) {
        var e = document.getElementById(id);
@@ -30,10 +31,10 @@
         </div>
     </a>
 </div>
-<div id="a1" style="display: none">
+<div class = "center" id="a1" style="display: none">
     {% for player in players %}
         {% if player.age < 30 %}
-            <p class="animated lightSpeedIn slow" > {{ player.name }} </p>
+            <p class="animated lightSpeedIn slow" id="player-drink-font"> {{ player.name }} </p>
         {% endif %}
     {% endfor %}
 </div>
@@ -44,13 +45,13 @@
         <div class="card-content" id="card-font">
             <span class="card-title">-</span>
             <p>for player in players</p>
-            <p class="second-line">if player.color != Blue</p>
+            <p class="second-line">if player.color != blue</p>
         </div>
     </a>
 </div>
 <div id="a2" style="display: none">
     {% for player in players %}
-        {% if player.color != blue %}
+        {% if player.color != BLUE %}
             <p class="animated lightSpeedIn slow"> {{ player.name }} </p>
         {% endif %}
     {% endfor %}
@@ -123,11 +124,16 @@
 </div>
 <div id="a6" style="display: none">
     {% for player in players %}
-        {% if player.color == red %}
+        {% comment %} {% if player.color == red %} {% endcomment %}
+            {% if player.drink == beer %}
             <p class="animated lightSpeedIn slow" > {{ player.name }} </p>
-        {% endif %}
+            {% endif %}
+        {% comment %} {% endif %} {% endcomment %}
     {% endfor %}
 </div>
 
-<a href="{% url 'results' %}" class="btn">End Game</a>
+<a href="{% url 'results' %}" class="right btn">End Game</a>
+<a href="{% url 'game' %}" class="btn">Back to Questions</a>
+<br>
+<br>
 {% endblock %}
