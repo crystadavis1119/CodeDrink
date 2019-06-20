@@ -47,13 +47,15 @@ a {
 }
 
 span {
-  color: #ff847c
+  color: #ff847c;
 }
 
 p {
   color: #3caea3;
   font-family: 'Mada', sans-serif;
   letter-spacing: 0.1em;
+  font-size: 1.2em;
+  font-weight: bold;
 }
 
 h6 {
@@ -61,14 +63,9 @@ h6 {
   font-family: 'Mada', sans-serif; 
 }
 
-.form-font {
-  color: #ffffff;
-}
-
 #player-drink-font {
   font-family: 'Bungee', cursive !important;
-  font-weight: bold;
-  font-size: 2.0em;
+  font-size: 1.5em;
   color: #305f72 !important;
 }
 

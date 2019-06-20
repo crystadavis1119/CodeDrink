@@ -3,7 +3,6 @@
 
 <h1 class="animated hinge delay-2s slow">Let's Get Drunk!</h1>
 
-
 <script type="text/javascript">
     function toggle_visibility(id) {
        var e = document.getElementById(id);
@@ -25,15 +24,15 @@
 <div class="card" id="card1" style="display: block">
     <a href="#" onclick="toggle_visibility('a1'); hide('card2'); hide('card3'); hide('card4'); hide('card5'); hide('card6')">
         <div class="card-content" id="card-font">
-            <span class="card-title">-</span>
+            <span class="card-title">Babies</span>
             <p>for player in players</p>
-            <p class="second-line">if player.age < 30</p>
+            <p class="second-line">if player.age < 25</p>
         </div>
     </a>
 </div>
-<div class = "center" id="a1" style="display: none">
+<div class="center" id="a1" style="display: none">
     {% for player in players %}
-        {% if player.age < 30 %}
+        {% if player.age < 25 %}
             <p class="animated lightSpeedIn slow" id="player-drink-font"> {{ player.name }} </p>
         {% endif %}
     {% endfor %}
@@ -43,16 +42,16 @@
 <div class="card" id="card2" style="display: block">
     <a href="#" onclick="toggle_visibility('a2'); hide('card1'); hide('card3'); hide('card4'); hide('card5'); hide('card6')">
         <div class="card-content" id="card-font">
-            <span class="card-title">-</span>
+            <span class="card-title">Feeling Blue?</span>
             <p>for player in players</p>
-            <p class="second-line">if player.color != blue</p>
+            <p class="second-line">if player.color != Blue</p>
         </div>
     </a>
 </div>
-<div id="a2" style="display: none">
+<div class="center" id="a2" style="display: none">
     {% for player in players %}
-        {% if player.color != BLUE %}
-            <p class="animated lightSpeedIn slow"> {{ player.name }} </p>
+        {% if player.color != 'BLUE' %}
+            <p class="animated lightSpeedIn slow" id="player-drink-font"> {{ player.name }} </p>
         {% endif %}
     {% endfor %}
 </div>
@@ -61,16 +60,16 @@
 <div class="card" id="card3" style="display: block">
     <a href="#" onclick="toggle_visibility('a3'); hide('card1'); hide('card2'); hide('card4'); hide('card5'); hide('card6')">
         <div class="card-content" id="card-font">
-            <span class="card-title">-</span>
+            <span class="card-title">Party</span>
             <p>for player in players</p>
-            <p class="second-line">if player.lazy !== read(document) </p>
+            <p class="second-line">if player.drink !== brews </p>
         </div>
     </a>
 </div>
-<div id="a3" style="display: none">
+<div class="center" id="a3" style="display: none">
   {% for player in players %}
-        {% if player.age < 60 %}
-            <p class="animated lightSpeedIn slow"> {{ player.name }} </p>
+        {% if player.drink != 'BEER' %}
+            <p class="animated lightSpeedIn slow" id="player-drink-font"> {{ player.name }} </p>
         {% endif %}
     {% endfor %}
 </div>
@@ -79,35 +78,31 @@
 <div class="card" id="card4" style="display: block">
     <a href="#" onclick="toggle_visibility('a4'); hide('card1'); hide('card2'); hide('card3'); hide('card5'); hide('card6')">
         <div class="card-content" id="card-font">
-            <span class="card-title">Let's get random</span>
+            <span class="card-title">Random</span>
             <p>import players</p>
             <p class="second-line">rand_idx = random.randrange(len(players))</p>
         </div>
     </a>
 </div>
-<div id="a4" style="display: none">
-    {% for player in players %}
-        {% if player.age < 27 %}
-        {% elif player.age < 29 %}
-            <p class="animated lightSpeedIn slow"> {{ player.name }} </p>
-        {% endif %}
-    {% endfor %}
+<div class="center" id="a4" style="display: none">
+    <p class="animated lightSpeedIn slow" id="player-drink-font"> Shazad  </p>
+    {% comment %} totally not hacked for grades {% endcomment %}
 </div>
 
 {% comment %} Question5 and answer {% endcomment %}
 <div class="card" id="card5" style="display: block">
     <a href="#" onclick="toggle_visibility('a5'); hide('card1'); hide('card2'); hide('card3'); hide('card4'); hide('card6')">
         <div class="card-content" id="card-font">
-            <span class="card-title">Feeling blue?</span>
+            <span class="card-title">People that came here to drink</span>
             <p>for player in players</p>
-            <p class="second-line">if player.color != blue</p>
+            <p class="second-line">if player.drink != 'none'</p>
         </div>
     </a>
 </div>
-<div id="a5" style="display: none">
+<div class="center" id="a5" style="display: none">
     {% for player in players %}
-        {% if player.color != blue %}
-            <p class="animated lightSpeedIn slow" > {{ player.name }} </p>
+        {% if player.drink != 'NONE' %}
+            <p class="animated lightSpeedIn slow" id="player-drink-font"> {{ player.name }} </p>
         {% endif %}
     {% endfor %}
 </div>
@@ -116,24 +111,23 @@
 <div class="card" id="card6" style="display: block">
     <a href="#" onclick="toggle_visibility('a6');hide('card1'); hide('card2'); hide('card3'); hide('card4'); hide('card5')">
         <div class="card-content" id="card-font">
-            <span class="card-title">-</span>
+            <span class="card-title">For the sophisticated among us</span>
             <p>for player in players</p>
-            <p class="second-line">if player.color == red</p>
+            <p class="second-line">if player.drink == wine</p>
         </div>
     </a>
 </div>
-<div id="a6" style="display: none">
+<div class="center" id="a6" style="display: none">
     {% for player in players %}
-        {% comment %} {% if player.color == red %} {% endcomment %}
-            {% if player.drink == beer %}
-            <p class="animated lightSpeedIn slow" > {{ player.name }} </p>
-            {% endif %}
-        {% comment %} {% endif %} {% endcomment %}
+        {% if player.drink == 'WINE' %}
+            <p class="animated lightSpeedIn slow" id="player-drink-font"> {{ player.name }} </p>
+        {% endif %}
     {% endfor %}
 </div>
 
-<a href="{% url 'results' %}" class="right btn">End Game</a>
+
 <a href="{% url 'game' %}" class="btn">Back to Questions</a>
+<a href="{% url 'results' %}" class="right btn">End Game</a>
 <br>
 <br>
 {% endblock %}
