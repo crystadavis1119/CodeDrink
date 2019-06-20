@@ -1,13 +1,15 @@
 {% extends 'base.html' %}
 {% block content %}
 
-<h1 class="animated bounce">Home</h1>
+<h1 class="center animated bounce">Home</h1>
 <hr />
 
-<a href="{% url 'signup' %}" type="submit" class="btn">Sign Up</a>
+<div class="center">
+<a href="{% url 'signup' %}" class="btn">Sign Up</a>
 <br>
 <br>
-<a href="{% url 'login' %}" type="submit" class="btn">Log In</a>
-
+<h6 class="center"> Already a member? </h6>
+<a href="{% url 'login' %}" class="btn">Log In</a>
+</div>
 
 {% endblock %}

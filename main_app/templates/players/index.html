@@ -3,12 +3,12 @@
 
 <h1>Player List</h1>
 <hr />
-<a href="{% url 'game' %}" type="submit" class="btn">Start Game</a>
+<a href="{% url 'game' %}" class="btn">Start Game</a>
 
 {% for player in players %}
     <div class="card">
         <a href='/players/{{ player.id }}'>
-            <div class="card-content">
+            <div class="card-content" id="card-font">
                 <span class="card-title">{{ player.name }}</span>
                 <p>Age: {{ player.age }}</p>
                 <p>Favorite Color: {{ player.color }}</p>

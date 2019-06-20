@@ -8,15 +8,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Drink & Think</title>
     <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+        <link href="https://fonts.googleapis.com/css?family=Bungee|Bungee+Shade|Mada|Staatliches&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header class="navbar-fixed">
         <nav  id="nav-header-color">
             <div class="nav-wrapper">
-                <ul>
-                    <li><a href="/" class="left brand-logo">&nbsp;&nbsp;Drink & Think</a></li>
-                </ul>
+              <a href="/" class="left brand-logo" style="font-family:'Bungee', cursive;">&nbsp;&nbsp;Drink & Think</a>
                 <ul class="right">
                     {% if user.is_authenticated %}
                         <li><a href="{% url 'index' %}">View All Players</a></li>

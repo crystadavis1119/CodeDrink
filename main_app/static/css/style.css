@@ -7,6 +7,7 @@ body {
   
 h1 {
   font-family: 'Bungee Shade', cursive;
+  color: #305f72
 }
 
 #player-names {
@@ -15,6 +16,7 @@ h1 {
 
 #card-font {
   font-family: 'Staatliches', cursive;
+  letter-spacing: 0.1em;
 }
 
 main {
@@ -32,7 +34,7 @@ footer {
 
 .nav-wrapper {
   background-color: #f26627 !important;
-  font-family: 'Bungee', cursive;
+  font-family: 'Bungee', cursive !important;
 }
 
 .page-footer{
@@ -49,11 +51,14 @@ span {
 }
 
 p {
-  color: #3caea3
+  color: #3caea3;
+  font-family: 'Mada', sans-serif;
+  letter-spacing: 0.1em;
 }
 
-h1 {
-  color: #305f72
+h6 {
+  color: #305f72;
+  font-family: 'Mada', sans-serif; 
 }
 
 
@@ -5261,10 +5266,10 @@ h1 {
   .btn-small[disabled],
   .btn-flat[disabled] {
     pointer-events: none;
-    background-color: #DFDFDF !important;
+    background-color: #DFDFDF;
     -webkit-box-shadow: none;
             box-shadow: none;
-    color: #9F9F9F !important;
+    color: #9F9F9F;
     cursor: default;
   }
   
@@ -5287,8 +5292,8 @@ h1 {
   .btn-large[disabled]:hover,
   .btn-small[disabled]:hover,
   .btn-flat[disabled]:hover {
-    background-color: #DFDFDF !important;
-    color: #9F9F9F !important;
+    background-color: #DFDFDF;
+    color: #9F9F9F;
   }
   
   .btn, .btn-large, .btn-small,
@@ -6161,3 +6166,4 @@ h1 {
     font-size: 0.8rem;
     color: #9e9e9e;
   }
+
