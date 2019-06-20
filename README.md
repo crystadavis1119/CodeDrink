@@ -35,7 +35,13 @@ We will use each of the users answered profile questions in functions to determi
 * animation
 
 ### Screenshots
-![picture](homepage.png)
+![](code_drink/images/homepage.png)
+![](code_drink/images/login.png)
+![](code_drink/images/playerlist.png)
+![](code_drink/images/howto.png)
+![](code_drink/images/gameplay.png)
+![](code_drink/images/answer.png)
+![](code_drink/images/gameover.png)
 
 
 ### Biggest Challenges
