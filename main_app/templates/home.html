@@ -1,7 +1,10 @@
 {% extends 'base.html' %}
 {% block content %}
 
-<h1 class="center animated bounce">Home</h1>
+<h1 class="center animated slideInDown">Home</h1>
+<div class="center">
+<img class="responsive-img" src="./static/css/beer.png">
+</div>
 <hr />
 
 <div class="center">
@@ -10,6 +13,7 @@
 <br>
 <h6 class="center"> Already a member? </h6>
 <a href="{% url 'login' %}" class="btn">Log In</a>
+
 </div>
 
 {% endblock %}
