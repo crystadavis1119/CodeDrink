@@ -9,8 +9,6 @@ COLOR = [
     ('GREEN', 'Green'),
     ('ORANGE', 'Orange'),
     ('PURPLE', 'Purple'),
-    ('BLACK', 'Black'),
-    ('WHITE', 'White'),
 ]
 
 class Player(models.Model):
