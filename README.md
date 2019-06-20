@@ -1,7 +1,7 @@
-# Code Drink
+# Drink & Think
 
 ### Concept
-Being bootcamp students (both Software Engineering and UX/UI), we find ourselves unwinding after a long day of coding and designing by grabbing a beer with our fellow students. While brainstorming ideas for this project, we thought about how much we love playing games and asked ourselves, "Why not build something we're passionate about, while also having fun?" Lo and behold, Code Drink! A way to learn some basic python functions and have fun with your peers.
+Being bootcamp students (both Software Engineering and UX/UI), we find ourselves unwinding after a long day of coding and designing by grabbing a beer with our fellow students. While brainstorming ideas for this project, we thought about how much we love playing games and asked ourselves, "Why not build something we're passionate about, while also having fun?" Lo and behold, Drink & Think! A way to learn some basic python functions and have fun with your peers.
 
 ### How to Use
 Opening screen will prompt users to create a profile and login by answering a few questions. The answers to these questions will be used during the game in each of the 'functions'. 
@@ -27,6 +27,7 @@ We will use each of the users answered profile questions in functions to determi
 * Trello
 * Sketch
 * Adobe XD
+* Heroku
 
 ### Stretch Goals
 * Ranking system/ Point tracker
@@ -34,13 +35,12 @@ We will use each of the users answered profile questions in functions to determi
 * animation
 
 ### Screenshots
-[TBD]
+![](images/homepage.png)
 
 
 ### Biggest Challenges
 * first time working in a team
 * ensure clear communication
-* ensure everyone's ideas are heard
 
 ### Key Learnings & Take Aways
 * don't be afraid to ask for help
