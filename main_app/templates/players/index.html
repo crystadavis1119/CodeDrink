@@ -4,9 +4,31 @@
 <h1>Player List</h1>
 <hr />
 
+<script type="text/javascript">
+    function toggle_visibility(id) {
+       var e = document.getElementById(id);
+       if(e.style.display == 'block')
+          e.style.display = 'none';
+       else
+          e.style.display = 'block';
+    };
+</script>
+
+<a href="#" onclick="toggle_visibility('how-to');" class="btn">How To Play</a>
 {% if request.user.is_superuser  %}
-    <a href="{% url 'game' %}" class="btn">Start Game</a>
+    <a href="{% url 'game' %}" class="right btn">Start Game</a>
 {% endif %}
+
+<div id="how-to" style="display: none">
+    <p class="rules">
+        Welcome! <br>
+        Drink & Think will be started by your gamemaster soon. <br>
+        Once the game has started, your gamemaster will click a function that will <br> 
+        determine who will drink that round. <br>
+        Meanwhile, please fill up your cup and feel free edit your profile.
+    </p>
+</div>
+<br>
 
 
 {% for player in players %}
