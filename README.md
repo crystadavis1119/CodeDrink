@@ -58,3 +58,9 @@ We will use each of the users answered profile questions in functions to determi
 * differing levels of difficulty 
 * socket-functionality (live updating)
 
+Pitch Deck: https://docs.google.com/presentation/d/1_cxGMpmrCI4o2WYPngaYDmHhfnegCq-nfKrTQoj9ghM/edit?usp=sharing
+
+![Style Guide](code_drink/images/originalStyleGuide.png)
+
+![Original Wire Frame](code_drink/images/DRINKandTHINK.pdf)
+![Updated Wire Frame](code_drink/images/DRINKandTHINKV2.pdf)
